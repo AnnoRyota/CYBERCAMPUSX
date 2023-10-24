@@ -1,0 +1,289 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #fff;
+  color: #0f172a;
+  line-height: 1.75;
+}
+
+body {
+  width: 100%;
+  font-family: 'Noto Sans JP',sans-serif;
+  background-color: #fff;
+  color: #0f172a;
+  line-height: 1.75;
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.fadein {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: leFadeInRight;
+  animation-timeline: entry 100;
+}
+
+@keyframes leFadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(60px);
+    }
+    to { opacity: 1 }
+}
+
+h3.subject {
+  width: 100%;
+  font-family: 'Noto Sans JP',sans-serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.75;
+  margin-bottom: 3rem;
+
+}
+
+/* メインビジュアルの　波線 */
+.custom-shape-divider-bottom-1697703981 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1697703981 svg {
+    position: relative;
+    display: block;
+    width: calc(154% + 1.3px);
+    height: 77px;
+}
+
+.custom-shape-divider-bottom-1697703981 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/* scrollmenu */
+/* 画像コンテナのスタイル */
+.image-container {
+    position: relative;
+}
+
+/* 画像のスタイル */
+.image {
+    display: none;
+    width: 100%;
+    height: auto;
+}
+
+.radio {
+  display: none;
+}
+
+/* ラジオボタンが選択されたときに対応する画像を表示 */
+/* #image-1:checked ~ .image-container #img-1,
+#image-2:checked ~ .image-container #img-2,
+#image-3:checked ~ .image-container #img-3 {
+    display: block;
+}*/
+
+input[type="radio"]:not(:checked) + label {
+  cursor: pointer;
+  font-size: 65%;
+  opacity: 0.25;
+  transition: font-size 0.2s, opacity 0.2s; /* トランジションを追加 */
+}
+
+/* ラジオボタンが選択されていないラベルのマウスホバー時のスタイル */
+input[type="radio"]:not(:checked) + label:hover {
+  font-size: 80%; /* マウスホバー時のフォントサイズ */
+  opacity: 1; /* マウスホバー時の不透明度 */
+}
+
+/* デフォルトで表示されるコンテンツ */
+    #img-2 {
+        display: block;
+    }
+
+    /* コンテンツに対するスタイル */
+    .image {
+        display: none;
+    }
+
+.image .img {
+  position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+
+.image .img::after {
+	position: absolute;
+	content: '';
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+  border: #000 1px solid;
+	/* box-shadow: inset 0 0 10px 10px #000; */
+}
+
+.bg {
+  background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+ background-blend-mode: multiply,multiply;
+}
+
+.bg-blue {
+  background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+}
+
+/* 液体のように動くアニメーション */
+
+.fluid-area {
+  width: 100%;
+  position: relative;
+}
+
+.fluid-block {
+    position: absolute;
+    top: 30%;
+    right: -100px;
+    width: 49vw;
+    height: 70vh;
+    animation-delay: 0.5s;
+}
+
+.fluid {
+    width:100%;
+    height:100%;
+    z-index: -1;
+    /* background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%); */
+    /* background-image: linear-gradient(to top, #dfe9f3 0%, white 100%); */
+    background-image: linear-gradient(-225deg, #FFFEFF 0%, #bfdbfe 100%);
+    animation: fluidrotate 30s ease 0s infinite;
+    webkit-filter:blur(7px);
+    -moz-filter:blur(7px);
+    -ms-filter:blur(7px);
+    filter:blur(7px);
+}
+
+
+@keyframes fluidrotate {
+
+0%, 100% {
+    border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
+}
+14% {
+    border-radius: 40% 60% 54% 46%/49% 60% 40% 51%;
+}
+28% {
+    border-radius: 54% 46% 38% 62%/49% 70% 30% 51%;
+}
+42% {
+    border-radius: 61% 39% 55% 45%/61% 38% 62% 39%;
+}
+56% {
+    border-radius: 61% 39% 67% 33%/70% 50% 50% 30%;
+}
+70% {
+    border-radius: 50% 50% 34% 66%/56% 68% 32% 44%;
+}
+84% {
+    border-radius: 46% 54% 60% 50%/35% 61% 39% 65%;
+}
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.smooth {
+	animation-name: smoothAnime;
+	animation-duration:1s;
+	animation-fill-mode:forwards;
+  transform-origin: left;
+	opacity:0;
+}
+
+@keyframes smoothAnime{
+  from {
+  transform: translate3d(0, 100%, 0) skewY(10deg);
+  opacity:0;
+  }
+
+  to {
+  transform: translate3d(0, 0, 0) skewY(0);
+  opacity:1;
+  }
+}
+
+.fadeUpTrigger,.smoothTrigger{
+    opacity: 0;
+}
+
+.fadeUp{
+animation-name: fadeUpAnime;
+animation-duration:0.5s;
+animation-fill-mode:forwards;
+opacity:0;
+}
+
+@keyframes fadeUpAnime{
+  from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fadeRight {
+    opacity: 0;
+    transform: translateX(-100px);
+    animation: fadeRightAnime 1s ease 0.5s forwards;
+    animation-range: entry,exit;
+}
+
+@keyframes fadeRightAnime {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fadeIn {
+  opacity: 0;
+  transform: translateY(100px);
+  animation: fadeIn 3s ease 0.5s forwards;
+  animation-timeline: view();
+  animation-range: entry 0% contain 20%;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>サービス案内</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;500;800;900&family=Zen+Antique&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/item.css" />
+    <script>
+      tailwind.config = {
+        theme: {
+    extend: {
+            colors: {
+              primary: "#0369a1",
+              secondary: "#00507F",
+              yellow: "#EFB532",
+              red: "#EF3232",
+              bgapple: "#fbfbfd",
+      },
+      backgroundImage: {
+        // main: "url('images/main.jpg')",
+      },
+          },
+  },
+  plugins: [
+        plugin(({ addVariant, e }) => {
+            addVariant('label-checked', ({ modifySelectors, separator }) => {
+                modifySelectors(
+                    ({ className }) => {
+                        const eClassName = e(`label-checked${separator}${className}`); // escape class
+                        const yourSelector = 'input[type="radio"]'; // your input selector. Could be any
+                        return `${yourSelector}:checked ~ .${eClassName}`; // ~ - CSS selector for siblings
+                    }
+                )
+            })
+        }),
+    ],
+      }
+    </script>
+  </head>
+  <body>
+    <div class="">
+        <header class="flex justify-between items-center px-4 h-14">
+          <div class="px-6 text-base font-bolder">
+            <h1>CYBER CAMPUS X</h1>
+          </div>
+          <div class="flex gap-4 text-sm">
+            <p><a href="#">サービスライン</a></p>
+            <p><a href="#">よくある質問</a></p>
+            <p><a href="#">お問い合わせ</a></p>
+          </div>
+        </header>
+        <div class="w-full h-full relative">
+          <div class="swiper mySwiper w-full h-full">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="relative w-full h-[90vh]">
+                  <img class="w-full object-cover" src="images/main_01.jpeg" alt="">
+              </div>
+              <div class="absolute top-[22%] px-10">
+                <h2 class="text-white font-['Zen_Antique'] text-[4.125rem] leading-relaxed tracking-wider">新しい時代に向けた<br>WEB3.0 教育ITプラットフォーム</h2>
+                <h4 class="mt-8 text-white font-['Zen_Antique'] text-[2vw] leading-relaxed tracking-wider">これからは、学びを蓄積する学生ポータル</h4>
+              </div>
+              <div class="custom-shape-divider-bottom-1697703981">
+              <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+              <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="fill-white"></path>
+              </svg>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="relative w-full h-[90vh]">
+              <img class="w-full object-cover" src="images/main_02.jpeg" alt="">
+              </div>
+              <div class="absolute top-[22%] px-10">
+                <h2 class="text-white font-['Zen_Antique'] text-[4.125rem] leading-relaxed tracking-wider drop-shadow-md">未来の社会へ羽ばたく世代の<br>WEB3.0 教育ITプラットフォーム</h2>
+                <h4 class="mt-8 text-white font-['Zen_Antique'] text-[2vw] leading-relaxed tracking-wider drop-shadow-md">これからは、学びを蓄積する学生ポータル</h4>
+              </div>
+              <div class="custom-shape-divider-bottom-1697703981">
+              <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+              <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="fill-white"></path>
+              </svg>
+              </div>
+            </div>
+            </div>
+          </div>
+
+
+
+
+        </div>
+
+    <main class="w-full">
+      <div class="w-full pt-20 px-20">
+        <h3 class="subject smoothTrigger smooth">学校ポータルとして、365日24時間活用できる<br>教育ITプラットフォーム</h3>
+        <p class="fadeIn text-base leading-[1.75] tracking-wider">先生や学校からのお知らせ、生徒の学びの記録、掲示板、アンケート、欠席連絡といったミニマムでの学校ポータルとしてご利用から大規模な学校で活用しているインフラや既存システムとの連携など、専用のサーバ環境で学校に合わせたカスタマイズを行うこともできます。</p>
+
+        <div class="fadeIn w-3/5 my-8 mx-auto">
+          <img src="images/mockup.jpg" alt="">
+        </div>
+
+        <div class="button rounded-full">
+          <a class="block py-2 text-sm" href="https://www.cybercampus.ac/login" target="_blank"><span class="text-base font-semibold">詳細</span><br>CYBER CAMPUS</a>
+        </div>
+      </div>
+
+      <div class="fadeIn bg-white/80 bg-[url('images/bg.png')] bg-cover bg-no-repeat mt-[100px] py-[100px]">
+      <div class="fluid-area relative">
+
+      <div class="w-full px-20 flex gap-8">
+        <div class="fadeIn w-1/3">
+          <img class="w-full" src="images/image_01.png" alt="">
+        </div>
+        <div class="z-10 w-2/3">
+          <h3 class="subject smoothTrigger smooth">ブロックチェーンで新たな世界へ<br>学びの記録、学習ミッションクリアでトークンを付与できます</h3>
+          <p class="fadeIn text-base leading-[1.75] tracking-wider">先生や学校からのお知らせ、生徒の学びの記録、掲示板、アンケート、欠席連絡といったミニマムでの学校ポータルとしてご利用から大規模な学校で活用しているインフラや既存システムとの連携など、専用のサーバ環境で学校に合わせたカスタマイズを行うこともできます。</p>
+        </div>
+      </div>
+
+      <!-- <div class="z-0 fluid-block">
+        <div class="fluid"></div>
+      </div> -->
+      </div>
+
+      <div class="w-full pt-[150px] px-20">
+        <h3 class="subject smoothTrigger smooth">獲得トークンを将来のために</h3>
+          <p class="z-10 fadeIn pb-8 text-base leading-[1.75] tracking-wider">学校で学んだ事柄をWeb3.0による分散型ネットワークで改ざんされていない正確な情報を永続的に保持し証明することで、学生の学びの資産を将来に活かすことができます。学校生活で学んだ事を記録し進学や就職や奨学金などWEB3.0を活用することができます。</p>
+
+        <div class="flex gap-10">
+          <div class="w-2/3">
+          <p class="z-10 fadeIn text-base leading-[1.75] tracking-wider">ウォレットに蓄積されたコイン（トークン）を学費もしくは学費の一部にすることができる新しい返済の必要がない奨学金の実現。学校卒業後もOBのコミュニティ化を行い、卒業生での繋がりを実現。転職など再就職の際も学校に相談ができる学びのデータを蓄積することができます。<br>また、学習ミッションの達成によって、NFTバッジを付与したり、学びの記録から将来の道に合わせた学びの経歴書をNFTで出力したり、これまので学びを証明していくことで、学びの資産を守っていきます。</p>
+        </div>
+          <div class="z-10 w-1/3 fadeIn">
+          <img class="w-full" src="images/image_02.png" alt="">
+          </div>
+        </div>
+      </div>
+      </div>
+
+    </main>
+
+
+
+    <div class="w-full py-[100px] px-20 bg-black text-white">
+    <h3 class="subject smoothTrigger smooth">充実した機能</h3>
+    <div class="flex">
+        <div class="fadeIn w-1/2 sticky">
+         <div class="image-container text-[15px] leading-[1.75]">
+           <div class="image" id="img-1">
+            <div class="rounded-lg overflow-hidden img">
+              <img class="w-full" src="images/manabi.png" alt="">
+            </div>
+            <p class="my-8">学んだことを簡単に投稿できます。学生同士や教員からのコメントやいいねが付くなど学びの活性化に繋げます。学びの記録はブロックチェーンで管理され、投稿する度にウォレットにトークンが付与されます。</p>
+
+           </div>
+           <div class="image" id="img-2">
+            <div class="rounded-lg overflow-hidden img">
+             <img class="object-contain" src="images/mypage.png" alt="">
+            </div>
+            <p class="my-8">新しい形の学生ポータルとして、自分専用のページが用意され、学びの記録、教員からのお知らせなど自分に合った内容が更新されていきます。自分専用のページは、他のユーザーが閲覧することができ、学びの記録やバイオリンク（SNSのリンク）が表示されます。</p>
+           </div>
+           <div class="image" id="img-3">
+            <div class="rounded-lg overflow-hidden img">
+            <img src="images/main_02.jpeg">
+            </div>
+             <p class="my-8">学生は、教員によって作成された学習ミッションに参加することができます。達成するとトークンとバッジが付与されます。</p>
+           </div>
+           <div class="image" id="img-4">
+            <div class="rounded-lg overflow-hidden img">
+            <img src="images/wallet.png">
+            </div>
+             <p class="my-8">ウォレットには、学びの記録の投稿や学習ミッションの達成によって付与されるトークンが蓄積されます。また、学習ミッションの達成によって付与されたバッジも蓄積されます。</p>
+           </div>
+           <div class="image" id="img-5">
+            <div class="rounded-lg overflow-hidden img">
+            <img src="images/slack.png">
+            </div>
+             <p class="my-8">学校内でSlackが利用されている場合は、Slackと連携し、Slackのチャンネルの表示や、DMによるメッセージの連携、各種通知がSlackに送られます。</p>
+           </div>
+         </div>
+    </div>
+
+    <div class="fadeIn w-2/5 sticky py-4">
+        <ul class="flex flex-col gap-8 text-[3vw] font-bold">
+            <li class="pl-12">
+              <input class="radio" type="radio" name="image-selector" id="image-1">
+                <label class="title block label-checked:opacity-75" for="image-1" onclick="showContent('img-1')">学びの記録を簡単投稿</label>
+            </li>
+            <li class="pl-12">
+              <input class="radio" type="radio" name="image-selector" id="image-2" checked>
+                <label class="title block label-checked:opacity-75" for="image-2" onclick="showContent('img-2')">自分専用のページ</label>
+            </li>
+            <li class="pl-12">
+              <input class="radio" type="radio" name="image-selector" id="image-3">
+                <label class="title block label-checked:opacity-75" for="image-3" onclick="showContent('img-3')">学習ミッション</label>
+            </li>
+            <li class="pl-12">
+              <input class="radio" type="radio" name="image-selector" id="image-4">
+                <label class="title block label-checked:opacity-75" for="image-4" onclick="showContent('img-4')">ウォレット</label>
+            </li>
+            <li class="pl-12">
+              <input class="radio" type="radio" name="image-selector" id="image-5">
+                <label class="title block label-checked:opacity-75" for="image-5" onclick="showContent('img-5')">Slack連携</label>
+            </li>
+        </ul>
+    </div>
+        </div>
+      </div>
+    </div>
+
+  <footer class="bg-zinc-900 py-10 px-20 text-white text-sm leading-7">
+    <div class="flex gap-10 justify-between items-center">
+    <div class="grid grid-cols-2 gap-8">
+      <div>
+        <h5 class="font-semibold pb-2">運営会社</h5>
+        <p>サイバーエデュケーションテクノロジーズ株式会社<br>
+          東京都港区虎ノ門3-22-1 虎ノ門桜ビル4F</p>
+      </div>
+      <div>
+        <h5 class="font-semibold pb-2">お問い合わせ等</h5>
+        <p><a href="">よくあるご質問</a></p>
+        <p><a href="">お問い合わせ</a>（お問い合わせ窓口 平日10:00 - 17:00）</p>
+      </div>
+      <div>
+        <h5 class="font-semibold pb-2">パートナー</h5>
+        <p>株式会社エヌ・ティ・エス<br>
+          神奈川県横浜市港北区新横浜２丁目５−７</p>
+      </div>
+    </div>
+    <div class="w-[150px] h-auto">
+      <img src="images/logo.png" alt="">
+    </div>
+    </div>
+    <small class="mt-8 block text-center mx-auto">&copy;CYBER EDUCATION TECHNOLOGIES Inc. All Rights Reserved.</small>
+  </footer>
+  </body>
+</html>
+
+<script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      effect: "fade",
+      centeredSlides: true,
+      autoplay: {
+        delay: 4500,
+        disableOnInteraction: false,
+      },
+    });
+</script>
