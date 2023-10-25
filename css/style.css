@@ -233,15 +233,15 @@ input[type="radio"]:not(:checked) + label:hover {
   }
 }
 
-.smooth2 {
-	animation-name: smoothAnime2;
+.rightIn {
+	animation-name: rightIn;
 	animation-duration:1s;
 	animation-fill-mode:forwards;
   transform-origin: left;
 	opacity:0;
 }
 
-@keyframes smoothAnime2 {
+@keyframes rightIn {
   from {
   transform: translateX(-60px);
   opacity:0;
@@ -254,14 +254,14 @@ input[type="radio"]:not(:checked) + label:hover {
 }
 
 .leftIn {
-	animation-name: smoothAnime2;
+	animation-name: leftIn;
 	animation-duration:1s;
 	animation-fill-mode:forwards;
   transform-origin: left;
 	opacity:0;
 }
 
-@keyframes smoothAnime2 {
+@keyframes leftIn {
   from {
   transform: translateX(60px);
   opacity:0;

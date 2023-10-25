@@ -13,23 +13,23 @@ function fadeInOnScroll() {
             });
 }
 
-function fadeInOnScroll() {
-            var elements = document.querySelectorAll('.smoothTrigger');
+function fadeInRight() {
+            var elements = document.querySelectorAll('.rightInTrigger');
             elements.forEach(function (element) {
                 var elementPosition = element.getBoundingClientRect().top;
                 var windowHeight = window.innerHeight;
-                var isAnimated = element.classList.contains('smooth2');
+                var isAnimated = element.classList.contains('rightIn');
 
                 if (elementPosition < windowHeight * 0.9 && !isAnimated) {
-                    element.classList.add('smooth2');
+                    element.classList.add('rightIn');
                 } else if (elementPosition >= windowHeight * 0.9 && isAnimated) {
-                    element.classList.remove('smooth2');
+                    element.classList.remove('rightIn');
                 }
             });
 }
 
-function fadeInOnScroll() {
-            var elements = document.querySelectorAll('.smoothTrigger');
+function fadeInLeft() {
+            var elements = document.querySelectorAll('.leftInTrigger');
             elements.forEach(function (element) {
                 var elementPosition = element.getBoundingClientRect().top;
                 var windowHeight = window.innerHeight;
@@ -61,11 +61,15 @@ function fadeUpAnimation() {
 window.addEventListener('scroll', function () {
     fadeUpAnimation();
     fadeInOnScroll(); // 以前のアニメーションも実行
+    fadeInLeft(); // 以前のアニメーションも実行
+    fadeInRight(); // 以前のアニメーションも実行
 });
 
 // ページ読み込み時に初期状態を確認
 fadeUpAnimation();
 fadeInOnScroll(); // 以前のアニメーションも実行
+fadeInLeft(); // 以前のアニメーションも実行
+fadeInRight(); // 以前のアニメーションも実行
 
 function showContent(contentId) {
         const contentElements = document.querySelectorAll('.image');
