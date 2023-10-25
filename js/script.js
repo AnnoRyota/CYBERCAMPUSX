@@ -13,6 +13,36 @@ function fadeInOnScroll() {
             });
 }
 
+function fadeInOnScroll() {
+            var elements = document.querySelectorAll('.smoothTrigger');
+            elements.forEach(function (element) {
+                var elementPosition = element.getBoundingClientRect().top;
+                var windowHeight = window.innerHeight;
+                var isAnimated = element.classList.contains('smooth2');
+
+                if (elementPosition < windowHeight * 0.9 && !isAnimated) {
+                    element.classList.add('smooth2');
+                } else if (elementPosition >= windowHeight * 0.9 && isAnimated) {
+                    element.classList.remove('smooth2');
+                }
+            });
+}
+
+function fadeInOnScroll() {
+            var elements = document.querySelectorAll('.smoothTrigger');
+            elements.forEach(function (element) {
+                var elementPosition = element.getBoundingClientRect().top;
+                var windowHeight = window.innerHeight;
+                var isAnimated = element.classList.contains('leftIn');
+
+                if (elementPosition < windowHeight * 0.9 && !isAnimated) {
+                    element.classList.add('leftIn');
+                } else if (elementPosition >= windowHeight * 0.9 && isAnimated) {
+                    element.classList.remove('leftIn');
+                }
+            });
+}
+
 function fadeUpAnimation() {
     var fadeUpTriggers = document.querySelectorAll('.fadeUpTrigger');
     fadeUpTriggers.forEach(function (element) {
