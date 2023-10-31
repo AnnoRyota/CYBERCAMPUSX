@@ -54,8 +54,8 @@
   <body>
     <div class="">
         <header class="flex justify-between items-center px-4 h-14">
-          <div class="px-6 text-base font-bolder">
-            <h1>CYBER CAMPUS X</h1>
+          <div class="font-bolder">
+            <h1 class="h-6"><img class="w-full h-full" src="images/logo.svg" alt=""></h1>
           </div>
           <div class="flex gap-4 text-sm">
             <p><a href="#">サービスライン</a></p>
@@ -153,52 +153,61 @@
 
     <div class="fadeIn w-full py-[50px] md:py-[100px] px-5 md:px-20 bg-black/80 text-white">
     <h3 class="subject smoothTrigger smooth">革新的な機能</h3>
-    <div class="flex">
+      <div class="flex">
         <div class="fadeIn w-1/2 sticky">
          <div class="image-container text-[15px] leading-[1.75]">
-           <div class="image" id="img-1">
+           <div class="image" id="img-6">
             <div class="rounded-lg overflow-hidden img">
-              <img class="w-full" src="images/manabi.png" alt="">
+              <img class="w-full" src="images/page_01.jpg" alt="">
             </div>
-            <p class="my-8">学んだことを簡単に投稿できます。学生同士や教員からのコメントやいいねが付くなど学びの活性化に繋げます。学びの記録はブロックチェーンで管理され、投稿する度にウォレットにトークンが付与されます。</p>
-
+            <p class="my-8">ポータルのトップページは、ユーザーの好みのタイプを選択することができます。総合的に情報をレイアウトするタイプ、タイムライン形式で情報が更新されるタイプ、メニューリストだ けのシンプルなタイプ、自分のページをトップページにするタイプなどを選択できます。</p>
            </div>
            <div class="image" id="img-2">
             <div class="rounded-lg overflow-hidden img">
-             <img class="object-contain" src="images/mypage.png" alt="">
+             <img class="object-contain" src="images/page_02.jpg" alt="">
             </div>
             <p class="my-8">新しい形の学生ポータルとして、自分専用のページが用意され、学びの記録、教員からのお知らせなど自分に合った内容が更新されていきます。自分専用のページは、他のユーザーが閲覧することができ、学びの記録やバイオリンク（SNSのリンク）が表示されます。</p>
            </div>
+           <div class="image" id="img-1">
+            <div class="rounded-lg overflow-hidden img">
+              <img class="w-full" src="images/page_03.jpg" alt="">
+            </div>
+            <p class="my-8">学んだことを簡単に投稿できます。学生同士や教員からのコメントやいいねが付くなど学びの活性化に繋げます。学びの記録はブロックチェーンで管理され、投稿する度にウォレットにトークンが付与されます。</p>
+           </div>
            <div class="image" id="img-3">
             <div class="rounded-lg overflow-hidden img">
-            <img src="images/main_02.jpeg">
+            <img class="w-full" src="images/page_04.jpg">
             </div>
              <p class="my-8">学生は、教員によって作成された学習ミッションに参加することができます。達成するとトークンとバッジが付与されます。</p>
            </div>
            <div class="image" id="img-4">
             <div class="rounded-lg overflow-hidden img">
-            <img src="images/wallet.png">
+            <img class="w-full" src="images/page_05.jpg">
             </div>
              <p class="my-8">ウォレットには、学びの記録の投稿や学習ミッションの達成によって付与されるトークンが蓄積されます。また、学習ミッションの達成によって付与されたバッジも蓄積されます。</p>
            </div>
            <div class="image" id="img-5">
             <div class="rounded-lg overflow-hidden img">
-            <img src="images/slack.png">
+            <img class="w-full" src="images/page_06.jpg">
             </div>
              <p class="my-8">学校内でSlackが利用されている場合は、Slackと連携し、Slackのチャンネルの表示や、DMによるメッセージの連携、各種通知がSlackに送られます。</p>
            </div>
          </div>
-    </div>
+      </div>
 
-    <div class="fadeIn w-2/5 sticky py-4">
+      <div class="fadeIn w-2/5 sticky py-4">
         <ul class="flex flex-col gap-8 text-[3vw] font-bold">
+            <li class="pl-12">
+              <input class="radio" type="radio" name="image-selector" id="image-6" checked>
+                <label class="title block label-checked:opacity-75" for="image-6" onclick="showContent('img-6')">学生ポータル</label>
+            </li>
+            <li class="pl-12">
+              <input class="radio" type="radio" name="image-selector" id="image-2">
+                <label class="title block label-checked:opacity-75" for="image-2" onclick="showContent('img-2')">自分専用のページ</label>
+            </li>
             <li class="pl-12">
               <input class="radio" type="radio" name="image-selector" id="image-1">
                 <label class="title block label-checked:opacity-75" for="image-1" onclick="showContent('img-1')">学びの記録を簡単投稿</label>
-            </li>
-            <li class="pl-12">
-              <input class="radio" type="radio" name="image-selector" id="image-2" checked>
-                <label class="title block label-checked:opacity-75" for="image-2" onclick="showContent('img-2')">自分専用のページ</label>
             </li>
             <li class="pl-12">
               <input class="radio" type="radio" name="image-selector" id="image-3">
@@ -213,13 +222,84 @@
                 <label class="title block label-checked:opacity-75" for="image-5" onclick="showContent('img-5')">Slack連携</label>
             </li>
         </ul>
-    </div>
+      </div>
+      </div>
+      </div>
+
+    <div class="fadeInw-full py-[50px] md:py-[100px] px-5 md:px-20">
+    <h3 class="subject smoothTrigger smooth">サービスライン</h3>
+    <div class="grid grid-cols-3 gap-6">
+      <div class="fadeIn bg-white rounded-2xl py-8 px-5">
+        <div class="flex flex-col gap-2">
+        <h5 class="font-bold text-center text-2xl text-sky-700">スターター</h5>
+        <p class="text-center w-fit mx-auto text-sm text-white px-2 bg-sky-700 rounded-full">WEB3.0</p>
+        <p class="font-bold text-center text-2xl text-sky-700">Free</p>
+        <p class="font-bold text-center text-base text-sky-700">50アカウント（ユーザー）未満</p>
         </div>
+        <ul class="p-6 list-disc text-sm leading-loose">
+          <li>ポータル</li>
+          <li>自分のページ​</li>
+          <li>学びの記録​</li>
+          <li>お知らせ配信​</li>
+          <li>掲示板・コミュニティ</li>
+          <li>ライブラリ​</li>
+          <li>ウォレット​</li>
+          <li>6ヶ月のデータ保管​</li>
+          <li>ユーザーサポート窓口</li>
+        </ul>
+      </div>
+      <div class="fadeIn bg-white rounded-2xl py-8 px-5">
+        <div class="flex flex-col gap-2">
+        <h5 class="font-bold text-center text-2xl text-sky-700">ベーシック</h5>
+        <p class="text-center w-fit mx-auto text-sm text-white px-2 bg-sky-700 rounded-full">WEB3.0</p>
+        <p class="font-bold text-center text-2xl text-sky-700">3,000/年</p>
+        <p class="font-bold text-center text-base text-sky-700">アカウント数の制限はありません</p>
+        </div>
+        <ul class="p-6 list-disc text-sm leading-loose">
+          <li>ポータル</li>
+          <li>自分のページ​</li>
+          <li>学びの記録​</li>
+          <li>お知らせ配信​</li>
+          <li>掲示板・コミュニティ</li>
+          <li>アンケート</li>
+          <li>ライブラリ​</li>
+          <li>ウォレット​</li>
+          <li>欠席連絡・出席簿​</li>
+          <li>利用期間中のデータ保管</li>
+          <li>ユーザーサポート窓口</li>
+        </ul>
+      </div>
+      <div class="fadeIn bg-white rounded-2xl py-8 px-5">
+        <div class="flex flex-col gap-2">
+        <h5 class="font-bold text-center text-2xl text-sky-700">エンタープライズ</h5>
+        <p class="text-center w-fit mx-auto text-sm text-white px-2 bg-sky-700 rounded-full">WEB3.0</p>
+        <p class="font-bold text-center text-2xl text-sky-700">12,000円/年</p>
+        <p class="font-bold text-center text-base text-sky-700">アカウント数の制限はありません</p>
+        </div>
+        <ul class="p-6 list-disc text-sm leading-loose">
+          <li>ポータル※専用画面可</li>
+          <li>自分のページ​</li>
+          <li>学びの記録​</li>
+          <li>お知らせ配信​</li>
+          <li>掲示板・コミュニティ</li>
+          <li>アンケート​</li>
+          <li>チェックテスト​</li>
+          <li>ライブラリ​</li>
+          <li>ウォレット​</li>
+          <li>欠席連絡・出席簿​</li>
+          <li>QRコードによる入場認証</li>
+          <li>利用期間中のデータ保管</li>
+          <li>APIによる外部サービス連携</li>
+          <li>ユーザーサポート窓口</li>
+          <li>専用運営サポート　　　　　など</li>
+        </ul>
       </div>
     </div>
-
   </div>
-   </main>
+    </div>
+  </div>
+
+  </main>
 
   <footer class="bg-zinc-900 py-10 px-5 md:px-20 text-white text-sm leading-7">
     <div class="flex gap-10 justify-between items-center">
