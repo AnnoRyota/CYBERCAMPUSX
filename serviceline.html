@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>サービス案内</title>
+    <meta property="og:type" content="website">
+    <!-- <meta property="og:url" content="https://www.cyberedu.co.jp/"> -->
+    <meta property="og:title" content="CYBER CAMPUS X | サイバーキャンパス X">
+    <meta property="og:description" content="新しい時代に向けたWEB3.0 教育ITプラットフォーム">
+    <meta property="og:image" content="https://main.d38nwjipvoluf9.amplifyapp.com/images/description.jpg">
+    <meta property="og:site_name" content="CYBER CAMPUS X | サイバーキャンパス X">
+    <meta property="og:locale" content="ja_JP" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;500;800;900&family=Zen+Antique&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/item.css" />
+    <script>
+      tailwind.config = {
+        theme: {
+    extend: {
+            colors: {
+              primary: "#0369a1",
+              secondary: "#00507F",
+              yellow: "#EFB532",
+              red: "#EF3232",
+              bgapple: "#fbfbfd",
+      },
+      backgroundImage: {
+        // main: "url('images/main.jpg')",
+      },
+          },
+  },
+  plugins: [
+        plugin(({ addVariant, e }) => {
+            addVariant('label-checked', ({ modifySelectors, separator }) => {
+                modifySelectors(
+                    ({ className }) => {
+                        const eClassName = e(`label-checked${separator}${className}`); // escape class
+                        const yourSelector = 'input[type="radio"]'; // your input selector. Could be any
+                        return `${yourSelector}:checked ~ .${eClassName}`; // ~ - CSS selector for siblings
+                    }
+                )
+            })
+        }),
+    ],
+      }
+    </script>
+  </head>
+  <body>
+  <header class="flex justify-between items-center px-4 h-14">
+    <div class="font-bolder">
+      <h1 class="h-6"><a href="index.html"><img class="w-full h-full" src="images/logo.svg" alt=""></a></h1>
+    </div>
+    <div class="flex gap-4 text-sm">
+      <p><a href="serviceline.html">サービスライン</a></p>
+      <!-- <p><a href="#">よくある質問</a></p> -->
+      <p><a href="contact.html">お問い合わせ</a></p>
+    </div>
+  </header>
+
+  <main class="w-full min-h-[100vh] py-20 px-20 bg-slate-100">
+    <div class="fadeIn w-full">
+    <h3 class="subject smoothTrigger smooth">サービスライン</h3>
+    <div class="grid grid-cols-3 gap-6">
+      <div class="card fadeIn bg-white rounded-2xl py-8 px-5">
+        <div class="flex flex-col gap-2">
+        <h5 class="font-bold text-center text-2xl text-sky-700">スターター</h5>
+        <p class="text-center w-fit mx-auto text-sm text-white px-2 bg-sky-700 rounded-full">WEB3.0</p>
+        <p class="font-bold text-center text-3xl text-sky-700">Free</p>
+        <p class="font-bold text-center text-base text-sky-700">50アカウント（ユーザー）未満</p>
+        </div>
+        <ul class="p-6 list-disc text-sm leading-loose">
+          <li>ポータル</li>
+          <li>自分のページ​</li>
+          <li>学びの記録​</li>
+          <li>お知らせ配信​</li>
+          <li>掲示板・コミュニティ</li>
+          <li>ライブラリ​</li>
+          <li>ウォレット​</li>
+          <li>6ヶ月のデータ保管​</li>
+          <li>ユーザーサポート窓口</li>
+        </ul>
+      </div>
+      <div class="card fadeIn bg-white rounded-2xl py-8 px-5">
+        <div class="flex flex-col gap-2">
+        <h5 class="font-bold text-center text-2xl text-sky-700">ベーシック</h5>
+        <p class="text-center w-fit mx-auto text-sm text-white px-2 bg-sky-700 rounded-full">WEB3.0</p>
+        <p class="font-bold text-center text-3xl text-sky-700">3,000/年</p>
+        <p class="font-bold text-center text-base text-sky-700">アカウント数の制限はありません</p>
+        </div>
+        <ul class="p-6 list-disc text-sm leading-loose">
+          <li>ポータル</li>
+          <li>自分のページ​</li>
+          <li>学びの記録​</li>
+          <li>お知らせ配信​</li>
+          <li>掲示板・コミュニティ</li>
+          <li>アンケート</li>
+          <li>ライブラリ​</li>
+          <li>ウォレット​</li>
+          <li>欠席連絡・出席簿​</li>
+          <li>利用期間中のデータ保管</li>
+          <li>ユーザーサポート窓口</li>
+        </ul>
+      </div>
+      <div class="card fadeIn bg-white rounded-2xl py-8 px-5">
+        <div class="flex flex-col gap-2">
+        <h5 class="font-bold text-center text-2xl text-sky-700">エンタープライズ</h5>
+        <p class="text-center w-fit mx-auto text-sm text-white px-2 bg-sky-700 rounded-full">WEB3.0</p>
+        <p class="font-bold text-center text-3xl text-sky-700">12,000円/年</p>
+        <p class="font-bold text-center text-base text-sky-700">アカウント数の制限はありません</p>
+        </div>
+        <ul class="p-6 list-disc text-sm leading-loose">
+          <li>ポータル※専用画面可</li>
+          <li>自分のページ​</li>
+          <li>学びの記録​</li>
+          <li>お知らせ配信​</li>
+          <li>掲示板・コミュニティ</li>
+          <li>アンケート​</li>
+          <li>チェックテスト​</li>
+          <li>ライブラリ​</li>
+          <li>ウォレット​</li>
+          <li>欠席連絡・出席簿​</li>
+          <li>QRコードによる入場認証</li>
+          <li>利用期間中のデータ保管</li>
+          <li>APIによる外部サービス連携</li>
+          <li>ユーザーサポート窓口</li>
+          <li>専用運営サポート　　　　　など</li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </main>
+
+  <footer class="bg-zinc-900 py-10 px-5 md:px-20 text-white text-sm leading-7">
+    <div class="flex gap-10 justify-between items-center">
+    <div class="grid grid-cols-2 gap-8">
+      <div>
+        <h5 class="font-semibold pb-2">運営会社</h5>
+        <p>サイバーエデュケーションテクノロジーズ株式会社<br>
+          東京都港区虎ノ門3-22-1 虎ノ門桜ビル4F</p>
+      </div>
+      <div>
+        <h5 class="font-semibold pb-2">お問い合わせ等</h5>
+        <!-- <p><a href="">よくあるご質問</a></p> -->
+        <p><a href="">お問い合わせ</a>（お問い合わせ窓口 平日10:00 - 17:00）</p>
+      </div>
+      <div>
+        <h5 class="font-semibold pb-2">パートナー</h5>
+        <p>株式会社エヌ・ティ・エス<br>
+          神奈川県横浜市港北区新横浜２丁目５−７</p>
+      </div>
+    </div>
+    <div class="w-[150px] h-auto">
+      <img src="images/logo.png" alt="">
+    </div>
+    </div>
+    <small class="mt-8 block text-center mx-auto">&copy;CYBER EDUCATION TECHNOLOGIES Inc. All Rights Reserved.</small>
+  </footer>
+  </body>
+</html>
+
+<script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      effect: "fade",
+      centeredSlides: true,
+      autoplay: {
+        delay: 4500,
+        disableOnInteraction: false,
+      },
+    });
+</script>
