@@ -223,12 +223,14 @@ input[type="radio"]:not(:checked) + label:hover {
 
 @keyframes smoothAnime{
   from {
-  transform: translate3d(0, 100%, 0) skewY(10deg);
+  transform: translateY(60px);
+  /* transform: translate3d(0, 100%, 0) skewY(10deg); */
   opacity:0;
   }
 
   to {
-  transform: translate3d(0, 0, 0) skewY(0);
+  transform: translateY(0);
+  /* transform: translate3d(0, 0, 0) skewY(0); */
   opacity:1;
   }
 }
@@ -277,7 +279,7 @@ input[type="radio"]:not(:checked) + label:hover {
     opacity: 0;
 }
 
-.fadeUp{
+.fadeUp {
 animation-name: fadeUpAnime;
 animation-duration:0.5s;
 animation-fill-mode:forwards;
